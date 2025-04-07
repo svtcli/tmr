@@ -1,4 +1,4 @@
-#include "/dss/dsshome1/07/di52vum/bits/publishSomeDay/tmr/src/Tmr.hpp"  // to test
+#include "../src/Tmr.hpp"  // to test
 #include <unistd.h>   // for sleep
 #include <cassert>    // for ASSERT
 
