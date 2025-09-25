@@ -7,7 +7,7 @@
 #include <iostream>
 #if defined(TMR_VAR) && (TMR_VAR != TIME)
 #warning "Included p3em.hpp"
-#include "p3em.hpp"
+#include "../p3em/C++/p3em.hpp"
 #endif
 #include <chrono>
 using namespace std;
@@ -48,8 +48,8 @@ public:
   auto tok(){ auto v=tot(); cout<<"Tot time/s: "<<v<<endl; return v; }
   auto tak(){ auto v=lap(); cout<<"Lap time/s: "<<v<<endl; return v; }
 #elif TMR_VAR == TMR_ENERGY
-  auto tok(){ auto v=tot(); cout<<"Tot time/J: "<<v<<endl; return v; }
-  auto tak(){ auto v=lap(); cout<<"Lap time/J: "<<v<<endl; return v; }
+  auto tok(){ auto v=tot(); cout<<"Tot energy/J: "<<v<<endl; return v; }
+  auto tak(){ auto v=lap(); cout<<"Lap energy/J: "<<v<<endl; return v; }
 #elif TMR_VAR == TMR_ACTION
   auto tok(){ auto v=tot(); cout<<"Tot action/Js: "<<v<<endl; return v; }
   auto tak(){ auto v=lap(); cout<<"Lap action/Js: "<<v<<endl; return v; }

@@ -40,11 +40,11 @@ int main() {
     sw.rst(); sw.tik(); usleep(1E5);
     assert(isclose(sw.tot(), 1.0E-1));
 
-    cout<<endl<<"## tik while already running, sleep 100msec, tok "<<endl; 
+    cout<<endl<<"## tik while already running, sleep 100msec, tok "<<endl;
     sw.tik(); usleep(1E5);
     assert(isclose(sw.tok(), 2.0E-1));
 
-    cout<<endl<<"## tik while already running, sleep 100msec, tot "<<endl; 
+    cout<<endl<<"## tik while already running, sleep 100msec, tot "<<endl;
     sw.tik(); usleep(1E5);
     assert(isclose(sw.tot(), 3.0E-1));
 
