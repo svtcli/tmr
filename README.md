@@ -19,3 +19,7 @@ Salvatore Cielo, Leibniz-Rechenzentrum
 
 ## License
 Apache II
+
+## TODO
+The test unit is not compatible with p3em energy :'(. 
+Will have to think of some new tests.
