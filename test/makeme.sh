@@ -8,4 +8,4 @@ VAR=ACTION;  PT=-pthread # Higly experimental & controversial
 # define compiler
 MYCXX=icpx
 
-$MYCXX -DTMR_VAR=TMR_$VAR -o test test.cpp $PT
+$MYCXX -DTMR_VAR=TMR_$VAR -o test$VAR test.cpp $PT
