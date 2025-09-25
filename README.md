@@ -15,7 +15,7 @@ It works with the `tik/tok` scheme and comes with a test unit. It contains:
 - `tot`: like tok but no print, only return
 
 ## Authors and acknowledgment
-Salvatore Cielo, LRZ
+Salvatore Cielo, Leibniz-Rechenzentrum
 
 ## License
-TBA
+Apache II
