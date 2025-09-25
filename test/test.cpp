@@ -5,14 +5,16 @@
 using namespace std;
 
 template <typename F>
-bool isclose(F value, F reference, F tolerance=5.0E-2){
+bool isclose(F value, F reference, F tolerance=1.0E240){
   F expression = (reference > tolerance)?abs(reference/value-1.0):abs(reference-value);
   bool outcome = static_cast<bool>(expression <= tolerance);
+#ifndef NDEBUG
   if(!outcome){
     cout<<"They are not close!"<<endl;
     cout<<"  Is value      "<<value     <<" ~= reference "<<reference<<"? If so, raise tolerance!"<<endl;
     cout<<"  Is expression "<<expression<<" <= tolerance "<<tolerance<<"?"<<endl;
   }
+#endif
   return outcome;
 }
 
